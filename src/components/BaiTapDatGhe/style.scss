@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 !important;
+}
+
+body {
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0094e95c 0%, #80d0c766 100%),
+        url(../../../public/images/bgmovie.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+button {
+    outline: none !important;
+    border: none;
+}
+
+h2 {
+    color: yellow;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.detail {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+
+    .content {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    color: yellow;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.chair {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 47px;
+    margin: 10px 0 0 10px;
+
+    &.number {
+        background-color: transparent;
+        color: yellow;
+    }
+
+    &.booked {
+        background-color: rgb(196, 137, 27);
+    }
+
+    &.available {
+        background-color: rgb(205, 192, 192);
+    }
+
+    &.selected {
+        background-color: rgb(29, 113, 29);
+    }
+}
